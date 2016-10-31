@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/form_nome"
+                android:hint="Nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/form_endereco"
+                android:hint="Endereço"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/form_telefone"
+                android:hint="Telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/form_site"
+                android:hint="Site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:id="@+id/form_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:max="10"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+</ScrollView>
