@@ -32,8 +32,16 @@ public class AlunoDao extends SQLiteOpenHelper {
     public void insere(Aluno aluno) {
 
         SQLiteDatabase db = getWritableDatabase();
+
         ContentValues dados = new ContentValues();
+        dados.put("nome",aluno.getNome());
+        dados.put("endereco",aluno.getEndereco());
+        dados.put("telefone",aluno.getTelefone());
+        dados.put("site",aluno.getSite());
+        dados.put("nota",aluno.getNota());
 
         db.insert("Alunos",null,dados);
+
+        db.close();
     }
 }
